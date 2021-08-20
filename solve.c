@@ -2,6 +2,7 @@
 
 void linear(double a, double b, double c, struct solution *s)
 {
+	assert(s);
 	if (fabs(b) < ACCURACY) {
 		if (fabs(c) < ACCURACY)
 			s->type = INF_SOL;
@@ -15,11 +16,13 @@ void linear(double a, double b, double c, struct solution *s)
 
 void quadratic_roots(double a, double b, double d, struct solution *s) 
 {
+	assert(s);
 	s->x1 = (-b - sqrt(d)) / (2 * a);
         s->x2 = (-b + sqrt(d)) / (2 * a);
 }
 void quadratic(double a, double b, double c, struct solution *s) 
 {
+	assert(s);
 	double d = discr(a, b, c);
 	if (d < 0) {
 		s->type = NO_SOL;
@@ -31,11 +34,13 @@ void quadratic(double a, double b, double c, struct solution *s)
 
 void solve(double a, double b, double c, struct solution *s)
 {
+	assert(s);
 	(fabs(a) < ACCURACY) ? linear(a, b, c, s) : quadratic(a, b, c, s); 
 }
 
 void print_roots(struct solution *s)
 {
+	assert(s);
 	switch (s->type) {
 	case INF_SOL:
 		printf("Infinite solutions\n");
@@ -57,6 +62,7 @@ void print_roots(struct solution *s)
 
 int read_coefficient(double *c)
 {
+	assert(c);
 	char i[MAXLEN];
        	char *ptr;
 	scanf("%s", i);
