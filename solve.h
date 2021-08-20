@@ -1,15 +1,29 @@
 #ifndef SOLVE_H
 #define SOLVE_H
+
 #include <stdio.h>
 #include <math.h>
+#include <errno.h>
+#include <stdlib.h>
+
+/* calculate discriminant */
+#define discr(a, b, c) (b * b - 4 * a * c)
+
+/* accuracy */
+#define ACCURACY 10e-10
+
+/* maximum input lenghtj */
+#define MAXLEN 100
 
 /* solution state */
 enum state {
-	LINEAR,
 	NO_SOL,
-	QUADR,
+	ONE_SOL,
+	TWO_SOL,
 	INF_SOL
 };
+
+/* store solutions */
 struct solution {
         double x1;
         double x2;
@@ -17,14 +31,24 @@ struct solution {
 };
 
 /* solve linear equation */
-static struct solution linear(double , double , double );
+void linear(double a, double b, double c, struct solution *);
 
 /* solve quadratic equation */
-static struct solution quadratic(double , double , double );
+void quadratic(double a, double b, double c, struct solution *);
+
+/* calculate roots of quadratic equasion with discr >= 0 */
+void quadratic_roots(double a, double b, double discriminant, struct solution *);
 
 /* define equation type */
-struct solution solve(double , double , double );
+void solve(double a, double b, double c, struct solution *s);
 
 /* print solutions(or no solutions) */
-void print(struct solution *);
+void print_roots(struct solution *);
+
+/*
+ * reads from arguments to coefficients and returns 0  
+ * overwies returns -1
+ */
+int read_coefficient(double *coeff);
+
 #endif //SOLVE_H

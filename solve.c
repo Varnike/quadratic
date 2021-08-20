@@ -1,40 +1,40 @@
 #include "solve.h"
 
-static struct solution linear(double a, double b, double c)
+void linear(double a, double b, double c, struct solution *s)
 {
-	struct solution s;
-	if (!b) {
-		if (!c)
-			s.type = INF_SOL;
+	if (fabs(b) < ACCURACY) {
+		if (fabs(c) < ACCURACY)
+			s->type = INF_SOL;
 		else
-			s.type = NO_SOL;
+			s->type = NO_SOL;
 	} else {
-		s.type = LINEAR;
-		s.x1 = c / b;
+		s->type = ONE_SOL;
+		s->x1 = c / b;
 	}
-	return s;
 }
 
-static struct solution quadratic(double a, double b, double c) 
+void quadratic_roots(double a, double b, double d, struct solution *s) 
 {
-	struct solution s;
-	double d = b * b - 4 * a * c;
+	s->x1 = (-b - sqrt(d)) / (2 * a);
+        s->x2 = (-b + sqrt(d)) / (2 * a);
+}
+void quadratic(double a, double b, double c, struct solution *s) 
+{
+	double d = discr(a, b, c);
 	if (d < 0) {
-		s.type = NO_SOL;
+		s->type = NO_SOL;
 	} else {
-		s.type = QUADR;
-		s.x1 = (-b - sqrt(d)) / (2 * a);
-		s.x2 = (-b + sqrt(d)) / (2 * a);
+		s->type = TWO_SOL;
+		quadratic_roots(a, b, d, s);
 	}
-	return s;
 }
 
-struct solution solve(double a, double b, double c)
+void solve(double a, double b, double c, struct solution *s)
 {
-	return (a == 0) ? linear(a, b, c) : quadratic(a, b, c);
+	(fabs(a) < ACCURACY) ? linear(a, b, c, s) : quadratic(a, b, c, s); 
 }
 
-void print(struct solution *s)
+void print_roots(struct solution *s)
 {
 	switch (s->type) {
 	case INF_SOL:
@@ -43,11 +43,28 @@ void print(struct solution *s)
 	case NO_SOL:
 		printf("No solutions\n");
 		break;
-	case LINEAR:
+	case ONE_SOL:
 		printf("Solution: %f\n", s->x1);
 		break;
-	case QUADR:
+	case TWO_SOL:
 		printf("Solutions: %f, %f\n", s->x1, s-> x2);
 		break;
+	default:
+		fprintf(stderr,"invalid state\n");
+		break;
 	}
+}
+
+int read_coefficient(double *c)
+{
+	char i[MAXLEN];
+       	char *ptr;
+	scanf("%s", i);
+	errno = 0;
+	*c = strtod(i, &ptr);
+	if (errno != 0 || *ptr != '\0') {
+		fprintf(stderr,"value could not be represented as a double exactly\n");
+		return 0;
+	}
+	return 1;
 }
