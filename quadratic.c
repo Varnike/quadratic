@@ -2,14 +2,14 @@
 
 int main(int argc, char *argv[])
 {
-	double x0 = 0, x1 = 0, x2 = 0;
-	if (!read_coefficient(&x2) || !read_coefficient(&x1) || !read_coefficient(&x0)) {
+	double a = 0, b = 0, c = 0;
+	if (!read_coefficient(&a) || !read_coefficient(&b) || !read_coefficient(&c)) {
 		fprintf(stderr, "invalid input\n");
 		return -1;
 	}
 
-	struct solution sol;
-	solve(x2, x1, x0, &sol);
+	struct solution sol = {0, 0, NO_SOL};
+	solve(a, b, c, &sol);
 
 	print_roots(&sol);
 

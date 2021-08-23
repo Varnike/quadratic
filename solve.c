@@ -1,43 +1,54 @@
 #include "solve.h"
 
-void linear(double a, double b, double c, struct solution *s)
+const int MAXLEN = 100;
+const double ACCURACY = 10e-6;
+
+void linear(struct coefficients *coeff, struct solution *s)
 {
 	assert(s);
-	if (fabs(b) < ACCURACY) {
-		if (fabs(c) < ACCURACY)
+	if (cmp_to_zero(coeff->b)) {
+		if (cmp_to_zero(coeff->c))
 			s->type = INF_SOL;
 		else
 			s->type = NO_SOL;
 	} else {
 		s->type = ONE_SOL;
-		s->x1 = c / b;
+		s->x1 = coeff->c / coeff->b;
 	}
 }
 
-void quadratic_roots(double a, double b, double d, struct solution *s) 
+void quadratic_roots(struct coefficients *coeff, double d, struct solution *s) 
 {
 	assert(s);
-	s->x1 = (-b - sqrt(d)) / (2 * a);
-        s->x2 = (-b + sqrt(d)) / (2 * a);
+	s->x1 = (-coeff->b - sqrt(d)) / (2 * coeff->a);
+        s->x2 = (-coeff->b + sqrt(d)) / (2 * coeff->a);
 }
-void quadratic(double a, double b, double c, struct solution *s) 
+void quadratic(struct coefficients *coeff, struct solution *s) 
 {
 	assert(s);
-	double d = discr(a, b, c);
-	if (d < 0) {
+	double d = discr(coeff);
+	if (d < -ACCURACY) {
 		s->type = NO_SOL;
 	} else {
 		s->type = TWO_SOL;
-		quadratic_roots(a, b, d, s);
+		quadratic_roots(coeff, d, s);
 	}
 }
 
 void solve(double a, double b, double c, struct solution *s)
 {
 	assert(s);
-	(fabs(a) < ACCURACY) ? linear(a, b, c, s) : quadratic(a, b, c, s); 
+	struct coefficients coeff;
+	coeff.a = a;
+	coeff.b = b;
+	coeff.c = c;
+	cmp_to_zero(a) ? linear(&coeff, s) : quadratic(&coeff, s); 
 }
 
+double discr(struct coefficients *coeff) 
+{
+	return (coeff->b * coeff->b - 4 * coeff->a * coeff->c);
+}
 void print_roots(struct solution *s)
 {
 	assert(s);
@@ -63,14 +74,19 @@ void print_roots(struct solution *s)
 int read_coefficient(double *c)
 {
 	assert(c);
-	char i[MAXLEN];
-       	char *ptr;
-	scanf("%s", i);
+	char input[MAXLEN];
+       	char *ptr = NULL;
+	scanf("%s", input);
 	errno = 0;
-	*c = strtod(i, &ptr);
+	*c = strtod(input, &ptr);
 	if (errno != 0 || *ptr != '\0') {
 		fprintf(stderr,"value could not be represented as a double exactly\n");
 		return 0;
 	}
 	return 1;
+}
+
+int cmp_to_zero(double val)
+{
+	return (fabs(val) < ACCURACY);
 }
