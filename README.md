@@ -1,6 +1,6 @@
 # quadratic
-study# Quadratic equasion solver
-## Solve quadratic or linear equation if you want
+Quadratic equasion solver
+
 ## Features
 
 - read coefficients from stdin
