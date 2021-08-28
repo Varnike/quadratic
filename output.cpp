@@ -1,12 +1,5 @@
 #include "output.h"
 
-/**
- * prints equasion roots.
- *
- * Prints equasion roots depending on sol state.
- *
- * @param sol pointer to solution structure.
- */
 int print_roots(struct solution *s)
 {
    	if (s == NULL)
