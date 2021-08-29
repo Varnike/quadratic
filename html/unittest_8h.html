@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: unittest.h File Reference</title>
+<title>My Project: src/unittest.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,32 +59,59 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">unittest.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Set of functions for testing the program.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="arithmetics_8h_source.html">arithmetics.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unittest.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="unittest_8h__incl.png" border="0" usemap="#aunittest_8h" alt=""/></div>
+<div class="center"><img src="unittest_8h__incl.png" border="0" usemap="#asrc_2unittest_8h" alt=""/></div>
 </div>
 </div>
 <p><a href="unittest_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aedd64c3f92da850b93776c65fd1cced3"><td class="memItemLeft" align="right" valign="top"><a id="aedd64c3f92da850b93776c65fd1cced3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>colors</b> { <b>DEFAULT</b> = 0
+, <b>RED</b> = 1
+, <b>GRN</b> = 2
+, <b>BLU</b> = 3
+ }</td></tr>
+<tr class="separator:aedd64c3f92da850b93776c65fd1cced3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668f134d9615aa5426eb362aae08b1ae"><td class="memItemLeft" align="right" valign="top"><a id="a668f134d9615aa5426eb362aae08b1ae"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>test_state</b> { <b>FAILED</b> = 0
+, <b>OK</b> = 1
+ }</td></tr>
+<tr class="separator:a668f134d9615aa5426eb362aae08b1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa43ba20a4dd2f2caeb5894db5b9c74b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#aa43ba20a4dd2f2caeb5894db5b9c74b2">set_of_tests</a> ()</td></tr>
 <tr class="separator:aa43ba20a4dd2f2caeb5894db5b9c74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37947b87323a9a32af486fa57fdaecaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#a37947b87323a9a32af486fa57fdaecaa">checkansw</a> (double val1, double val2)</td></tr>
-<tr class="separator:a37947b87323a9a32af486fa57fdaecaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e74761e0af4969e8280316c5a4013f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#ac3e74761e0af4969e8280316c5a4013f">test</a> (int n, double a, double b, double c, double x1, double x2, enum <a class="el" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fe">solutions_no</a> stype)</td></tr>
-<tr class="separator:ac3e74761e0af4969e8280316c5a4013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa133b128b70c1b970d396959923248c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#aa133b128b70c1b970d396959923248c9">test</a> (int n, struct <a class="el" href="structcoefficients.html">coefficients</a> coeffs, struct <a class="el" href="structequation__sol.html">equation_sol</a> answ_sol)</td></tr>
+<tr class="memdesc:aa133b128b70c1b970d396959923248c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">make one test with input parameters.  <a href="unittest_8h.html#aa133b128b70c1b970d396959923248c9">More...</a><br /></td></tr>
+<tr class="separator:aa133b128b70c1b970d396959923248c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc746d04c4ac2c0e1e3d5388684c3d5"><td class="memItemLeft" align="right" valign="top"><a id="a6cc746d04c4ac2c0e1e3d5388684c3d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#a6cc746d04c4ac2c0e1e3d5388684c3d5">setColor</a> (int col)</td></tr>
+<tr class="memdesc:a6cc746d04c4ac2c0e1e3d5388684c3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets stdin text color. <br /></td></tr>
+<tr class="separator:a6cc746d04c4ac2c0e1e3d5388684c3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fbf23996993c29a0bb9ab97b7a2a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#a10fbf23996993c29a0bb9ab97b7a2a72">print_test_state</a> (int ok, int n)</td></tr>
+<tr class="memdesc:a10fbf23996993c29a0bb9ab97b7a2a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints colorful text "OK" or "FAILED".  <a href="unittest_8h.html#a10fbf23996993c29a0bb9ab97b7a2a72">More...</a><br /></td></tr>
+<tr class="separator:a10fbf23996993c29a0bb9ab97b7a2a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -93,29 +120,31 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
 <tr class="separator:aa9fd151f85f8ce10b920c6360e0f0e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada9e135d8d261f2a6e7bdf1fb7ad277c"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structcoefficients.html">coefficients</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#ada9e135d8d261f2a6e7bdf1fb7ad277c">test_coeffs</a> [TESTNUMB]</td></tr>
 <tr class="separator:ada9e135d8d261f2a6e7bdf1fb7ad277c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb630778a1ba0444ba5562a83db233e8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structsolution.html">solution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#acb630778a1ba0444ba5562a83db233e8">test_sol</a> [TESTNUMB]</td></tr>
-<tr class="separator:acb630778a1ba0444ba5562a83db233e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc2bbdf80e2a083bb65c95f9aaaf048"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structequation__sol.html">equation_sol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unittest_8h.html#afcc2bbdf80e2a083bb65c95f9aaaf048">test_sol</a> [TESTNUMB]</td></tr>
+<tr class="separator:afcc2bbdf80e2a083bb65c95f9aaaf048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Set of functions for testing the program. </p>
+<dl class="section author"><dt>Author</dt><dd>Varnike </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>28 Aug 16:17 UTC+5 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a37947b87323a9a32af486fa57fdaecaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37947b87323a9a32af486fa57fdaecaa">&#9670;&nbsp;</a></span>checkansw()</h2>
+<a id="a10fbf23996993c29a0bb9ab97b7a2a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fbf23996993c29a0bb9ab97b7a2a72">&#9670;&nbsp;</a></span>print_test_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int checkansw </td>
+          <td class="memname">void print_test_state </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>val1</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ok</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>val2</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -124,15 +153,15 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
         </tr>
       </table>
 </div><div class="memdoc">
-<p>checks if programm answer is right.</p>
+
+<p>Prints colorful text "OK" or "FAILED". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">val1</td><td>first value. </td></tr>
-    <tr><td class="paramname">val2</td><td>second value.</td></tr>
+    <tr><td class="paramname">ok</td><td>1 if test was successful overwise 0. </td></tr>
+    <tr><td class="paramname">Test</td><td>number. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if val1 = val2 with accuracy 10e-6 overwise returns 0. </dd></dl>
 
 </div>
 </div>
@@ -150,13 +179,13 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
         </tr>
       </table>
 </div><div class="memdoc">
-<p>conducts several tests with ready data.</p>
+<p>Conducts several tests with ready data.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if there were no mistakes overwise returns 1. </dd></dl>
 
 </div>
 </div>
-<a id="ac3e74761e0af4969e8280316c5a4013f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3e74761e0af4969e8280316c5a4013f">&#9670;&nbsp;</a></span>test()</h2>
+<a id="aa133b128b70c1b970d396959923248c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa133b128b70c1b970d396959923248c9">&#9670;&nbsp;</a></span>test()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,38 +199,14 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structcoefficients.html">coefficients</a>&#160;</td>
+          <td class="paramname"><em>coeffs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fe">solutions_no</a>&#160;</td>
-          <td class="paramname"><em>stype</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structequation__sol.html">equation_sol</a>&#160;</td>
+          <td class="paramname"><em>answ_sol</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -210,7 +215,8 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
         </tr>
       </table>
 </div><div class="memdoc">
-<p>make one test with input parametrs.</p>
+
+<p>make one test with input parameters. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 if test success, overwise returns 1. </dd></dl>
 
 </div>
@@ -228,49 +234,49 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTNUMB</b> = 1
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {0, 0, 0},</div>
-<div class="line">    {0, 0, 1},</div>
-<div class="line">    {0, 1, 1},</div>
-<div class="line">    {99, 9832, -3092.32},</div>
-<div class="line">    {9, 45, 0},</div>
-<div class="line">    {0, 0, -9},</div>
-<div class="line">    {7, 7, 7},</div>
-<div class="line">    {101, 4, 88},</div>
-<div class="line">    {-34, -43, 323},</div>
-<div class="line">    {23.4, -88.23, -989.12}</div>
+<div class="line">    {{0, 0, 0}, 3},</div>
+<div class="line">    {{0, 0, 1}, 3},</div>
+<div class="line">    {{0, 1, 1}, 3},</div>
+<div class="line">    {{99, 9832, -3092.32}, 3},</div>
+<div class="line">    {{9, 45, 0}, 3},</div>
+<div class="line">    {{0, 0, -9}, 3},</div>
+<div class="line">    {{7, 7, 7}, 3},</div>
+<div class="line">    {{101, 4, 88}, 3},</div>
+<div class="line">    {{-34, -43, 323}, 3},</div>
+<div class="line">    {{23.4, -88.23, -989.12}, 3}</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>coefficients array for tests. </p>
+</div><!-- fragment --><p>Coefficients array for tests. </p>
 
 </div>
 </div>
-<a id="acb630778a1ba0444ba5562a83db233e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb630778a1ba0444ba5562a83db233e8">&#9670;&nbsp;</a></span>test_sol</h2>
+<a id="afcc2bbdf80e2a083bb65c95f9aaaf048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc2bbdf80e2a083bb65c95f9aaaf048">&#9670;&nbsp;</a></span>test_sol</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structsolution.html">solution</a> test_sol[TESTNUMB]</td>
+          <td class="memname">const struct <a class="el" href="structequation__sol.html">equation_sol</a> test_sol[TESTNUMB]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0feaf3e6fa9925576441c12b61696459de11">INF_SOL</a>},</div>
-<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
-<div class="line">    {-1, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea9975cac25be5c19ebc100ebc58e67004">ONE_SOL</a>},</div>
-<div class="line">    {-99.626657, 0.313526, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
-<div class="line">    {-5, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
-<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
-<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
-<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
-<div class="line">    {2.514053, -3.778759, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
-<div class="line">    {-4.88411, 8.65462, <a class="code" href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac">TWO_SOL</a>}</div>
+<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600caf3e6fa9925576441c12b61696459de11">INF_SOL</a>},</div>
+<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
+<div class="line">    {-1, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca9975cac25be5c19ebc100ebc58e67004">ONE_SOL</a>},</div>
+<div class="line">    {-99.626657, 0.313526, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
+<div class="line">    {-5, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
+<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
+<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
+<div class="line">    {0, 0, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a>},</div>
+<div class="line">    {2.514053, -3.778759, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac">TWO_SOL</a>},</div>
+<div class="line">    {-4.88411, 8.65462, <a class="code" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac">TWO_SOL</a>}</div>
 <div class="line">}</div>
-<div class="ttc" id="aarithmetics_8h_html_a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac"><div class="ttname"><a href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea681db2e870834d62487cf322aacd31ac">TWO_SOL</a></div><div class="ttdeci">@ TWO_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:47</div></div>
-<div class="ttc" id="aarithmetics_8h_html_a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf"><div class="ttname"><a href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a></div><div class="ttdeci">@ NO_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:39</div></div>
-<div class="ttc" id="aarithmetics_8h_html_a2c878e4b508352290042d5e0e770d0fea9975cac25be5c19ebc100ebc58e67004"><div class="ttname"><a href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0fea9975cac25be5c19ebc100ebc58e67004">ONE_SOL</a></div><div class="ttdeci">@ ONE_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:43</div></div>
-<div class="ttc" id="aarithmetics_8h_html_a2c878e4b508352290042d5e0e770d0feaf3e6fa9925576441c12b61696459de11"><div class="ttname"><a href="arithmetics_8h.html#a2c878e4b508352290042d5e0e770d0feaf3e6fa9925576441c12b61696459de11">INF_SOL</a></div><div class="ttdeci">@ INF_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:35</div></div>
-</div><!-- fragment --><p>answers array for tests. </p>
+<div class="ttc" id="aarithmetics_8h_html_abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac"><div class="ttname"><a href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac">TWO_SOL</a></div><div class="ttdeci">@ TWO_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:48</div></div>
+<div class="ttc" id="aarithmetics_8h_html_abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf"><div class="ttname"><a href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf">NO_SOL</a></div><div class="ttdeci">@ NO_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:40</div></div>
+<div class="ttc" id="aarithmetics_8h_html_abea4d72055676a8f4fc3e911a1c1600ca9975cac25be5c19ebc100ebc58e67004"><div class="ttname"><a href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600ca9975cac25be5c19ebc100ebc58e67004">ONE_SOL</a></div><div class="ttdeci">@ ONE_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:44</div></div>
+<div class="ttc" id="aarithmetics_8h_html_abea4d72055676a8f4fc3e911a1c1600caf3e6fa9925576441c12b61696459de11"><div class="ttname"><a href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600caf3e6fa9925576441c12b61696459de11">INF_SOL</a></div><div class="ttdeci">@ INF_SOL</div><div class="ttdef"><b>Definition:</b> arithmetics.h:36</div></div>
+</div><!-- fragment --><p>Answers array for tests. </p>
 
 </div>
 </div>

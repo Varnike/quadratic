@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: input.h Source File</title>
+<title>My Project: src/input.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,7 +45,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,6 +59,11 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">input.h</div>  </div>
@@ -69,21 +73,26 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define INPUT_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="input_8h.html#a09aab0719908e5f01c77d290451579fc">   20</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="input_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a> = 100;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="arithmetics_8h.html">arithmetics.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="input_8h.html#ae0f8262ae155d0cba15cec05d034c9e7">   17</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="input_8h.html#ae0f8262ae155d0cba15cec05d034c9e7">run_mode</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        UNITTEST_MODE = 0,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        DEFAULT_MODE  = 1</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a>(<span class="keywordtype">double</span> *coeff);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#aa199eb5ca026d61c1bca8eef5bb6fcb0">clearStdin</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="ainput_8h_html_a09aab0719908e5f01c77d290451579fc"><div class="ttname"><a href="input_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a></div><div class="ttdeci">const int MAXLEN</div><div class="ttdef"><b>Definition:</b> input.h:20</div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#a24174a96f6e50beeada7d4073bf6f7d4">readCoeffs</a>(<span class="keyword">struct</span> <a class="code" href="structcoefficients.html">coefficients</a> *coeff);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aarithmetics_8h_html"><div class="ttname"><a href="arithmetics_8h.html">arithmetics.h</a></div><div class="ttdoc">Set of functions which can be used to solve linear or quadratic equation.</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Configuration file.</div></div>
+<div class="ttc" id="ainput_8h_html_a24174a96f6e50beeada7d4073bf6f7d4"><div class="ttname"><a href="input_8h.html#a24174a96f6e50beeada7d4073bf6f7d4">readCoeffs</a></div><div class="ttdeci">int readCoeffs(struct coefficients *coeff)</div><div class="ttdoc">Reads all coefficients from stdin to coeff.</div><div class="ttdef"><b>Definition:</b> input.cpp:30</div></div>
 <div class="ttc" id="ainput_8h_html_a493a8efd86487fa2f65af9cf1d25611e"><div class="ttname"><a href="input_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a></div><div class="ttdeci">int read_coefficient(double *coeff)</div><div class="ttdef"><b>Definition:</b> input.cpp:3</div></div>
 <div class="ttc" id="ainput_8h_html_aa199eb5ca026d61c1bca8eef5bb6fcb0"><div class="ttname"><a href="input_8h.html#aa199eb5ca026d61c1bca8eef5bb6fcb0">clearStdin</a></div><div class="ttdeci">void clearStdin()</div><div class="ttdef"><b>Definition:</b> input.cpp:23</div></div>
+<div class="ttc" id="ainput_8h_html_ae0f8262ae155d0cba15cec05d034c9e7"><div class="ttname"><a href="input_8h.html#ae0f8262ae155d0cba15cec05d034c9e7">run_mode</a></div><div class="ttdeci">run_mode</div><div class="ttdef"><b>Definition:</b> input.h:17</div></div>
+<div class="ttc" id="astructcoefficients_html"><div class="ttname"><a href="structcoefficients.html">coefficients</a></div><div class="ttdoc">coefficient structure.</div><div class="ttdef"><b>Definition:</b> arithmetics.h:106</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

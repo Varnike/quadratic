@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: coefficients Struct Reference</title>
+<title>My Project: equation_sol Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,29 +63,72 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structcoefficients-members.html">List of all members</a>  </div>
+<a href="structequation__sol-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">coefficients Struct Reference</div>  </div>
+<div class="title">equation_sol Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>coefficient structure.  
- <a href="structcoefficients.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="arithmetics_8h_source.html">arithmetics.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0f4dc75e729d02b63c97500d185be1ec"><td class="memItemLeft" align="right" valign="top"><a id="a0f4dc75e729d02b63c97500d185be1ec"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>val</b> [10]</td></tr>
-<tr class="separator:a0f4dc75e729d02b63c97500d185be1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23269f95c239de6cf0a146adfb5a9c71"><td class="memItemLeft" align="right" valign="top"><a id="a23269f95c239de6cf0a146adfb5a9c71"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>coeff_n</b></td></tr>
-<tr class="separator:a23269f95c239de6cf0a146adfb5a9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c495848f80d0e2b2ccf012deb94630"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structequation__sol.html#a54c495848f80d0e2b2ccf012deb94630">x1</a></td></tr>
+<tr class="separator:a54c495848f80d0e2b2ccf012deb94630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70805cd2c921091b5f1d224570eddc2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structequation__sol.html#a70805cd2c921091b5f1d224570eddc2f">x2</a></td></tr>
+<tr class="separator:a70805cd2c921091b5f1d224570eddc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd925a10205c03493effa15e57f853ae"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600c">solutions_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structequation__sol.html#acd925a10205c03493effa15e57f853ae">type</a></td></tr>
+<tr class="separator:acd925a10205c03493effa15e57f853ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>coefficient structure. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>struct solution - Stores solution of equation. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="acd925a10205c03493effa15e57f853ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd925a10205c03493effa15e57f853ae">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="arithmetics_8h.html#abea4d72055676a8f4fc3e911a1c1600c">solutions_type</a> equation_sol::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>State of equation. </p>
+
+</div>
+</div>
+<a id="a54c495848f80d0e2b2ccf012deb94630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c495848f80d0e2b2ccf012deb94630">&#9670;&nbsp;</a></span>x1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double equation_sol::x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>First root of equation and only one if its linear equation with one solution. </p>
+
+</div>
+</div>
+<a id="a70805cd2c921091b5f1d224570eddc2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70805cd2c921091b5f1d224570eddc2f">&#9670;&nbsp;</a></span>x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double equation_sol::x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Second root (if it is quadratic equation). </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="arithmetics_8h_source.html">arithmetics.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: arithmetics.h File Reference</title>
+<title>My Project: src/arithmetics.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,6 +59,10 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -74,30 +78,30 @@ $(function() {
 <p>Set of functions which can be used to solve linear or quadratic equation.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for arithmetics.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="arithmetics_8h__incl.png" border="0" usemap="#aarithmetics_8h" alt=""/></div>
+<div class="center"><img src="arithmetics_8h__incl.png" border="0" usemap="#asrc_2arithmetics_8h" alt=""/></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="arithmetics_8h__dep__incl.png" border="0" usemap="#aarithmetics_8hdep" alt=""/></div>
+<div class="center"><img src="arithmetics_8h__dep__incl.png" border="0" usemap="#asrc_2arithmetics_8hdep" alt=""/></div>
 </div>
 </div>
 <p><a href="arithmetics_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolution.html">solution</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structequation__sol.html">equation_sol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcoefficients.html">coefficients</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficient structure  <a href="structcoefficients.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficient structure.  <a href="structcoefficients.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -122,7 +126,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="arithmetics_8h.html#acc42076253600be964e110149b458971a721da2b17ceeb0c1383276ac19c9cffb">UNKNOWN_ERR</a> = 4
 <br />
  }</td></tr>
-<tr class="memdesc:acc42076253600be964e110149b458971"><td class="mdescLeft">&#160;</td><td class="mdescRight">generalized error types.  <a href="arithmetics_8h.html#acc42076253600be964e110149b458971">More...</a><br /></td></tr>
+<tr class="memdesc:acc42076253600be964e110149b458971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generalized error types.  <a href="arithmetics_8h.html#acc42076253600be964e110149b458971">More...</a><br /></td></tr>
 <tr class="separator:acc42076253600be964e110149b458971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -130,16 +134,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a56f79bd0c4ff6db03241e8dd12874a41"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a56f79bd0c4ff6db03241e8dd12874a41">discr</a> (const double a, const double b, const double c)</td></tr>
 <tr class="memdesc:a56f79bd0c4ff6db03241e8dd12874a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">discriminant of quadratic equation.  <a href="arithmetics_8h.html#a56f79bd0c4ff6db03241e8dd12874a41">More...</a><br /></td></tr>
 <tr class="separator:a56f79bd0c4ff6db03241e8dd12874a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf37d97262beb68c0d4bfe9be48b5f0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#abf37d97262beb68c0d4bfe9be48b5f0c">linear</a> (const double b, const double c, struct <a class="el" href="structsolution.html">solution</a> *sol)</td></tr>
-<tr class="memdesc:abf37d97262beb68c0d4bfe9be48b5f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">solves linear equation.  <a href="arithmetics_8h.html#abf37d97262beb68c0d4bfe9be48b5f0c">More...</a><br /></td></tr>
-<tr class="separator:abf37d97262beb68c0d4bfe9be48b5f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801b3da7f6cb59a0ae8c8ba690062917"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a801b3da7f6cb59a0ae8c8ba690062917">quadratic</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *c, struct <a class="el" href="structsolution.html">solution</a> *sol)</td></tr>
-<tr class="memdesc:a801b3da7f6cb59a0ae8c8ba690062917"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve quadratic equation.  <a href="arithmetics_8h.html#a801b3da7f6cb59a0ae8c8ba690062917">More...</a><br /></td></tr>
-<tr class="separator:a801b3da7f6cb59a0ae8c8ba690062917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf9deb3c25d23950049f9a553f3f1df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a3bf9deb3c25d23950049f9a553f3f1df">quadratic_roots</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *c, const double discriminant, struct <a class="el" href="structsolution.html">solution</a> *sol)</td></tr>
-<tr class="separator:a3bf9deb3c25d23950049f9a553f3f1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9318f0e1363cef82959feeb1402671d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#ab9318f0e1363cef82959feeb1402671d">solve</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *coeff, struct <a class="el" href="structsolution.html">solution</a> *sol)</td></tr>
-<tr class="separator:ab9318f0e1363cef82959feeb1402671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f3a3f484453f04f5493bb9a6b19ce3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a68f3a3f484453f04f5493bb9a6b19ce3">linear</a> (const double b, const double c, struct <a class="el" href="structequation__sol.html">equation_sol</a> *sol)</td></tr>
+<tr class="memdesc:a68f3a3f484453f04f5493bb9a6b19ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves linear equation.  <a href="arithmetics_8h.html#a68f3a3f484453f04f5493bb9a6b19ce3">More...</a><br /></td></tr>
+<tr class="separator:a68f3a3f484453f04f5493bb9a6b19ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10618c42e73dbb0e0e005c17f75d6a40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a10618c42e73dbb0e0e005c17f75d6a40">quadratic</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *c, struct <a class="el" href="structequation__sol.html">equation_sol</a> *sol)</td></tr>
+<tr class="memdesc:a10618c42e73dbb0e0e005c17f75d6a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve quadratic equation.  <a href="arithmetics_8h.html#a10618c42e73dbb0e0e005c17f75d6a40">More...</a><br /></td></tr>
+<tr class="separator:a10618c42e73dbb0e0e005c17f75d6a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b47cb6b2016e660c160a0ee0b22763f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a3b47cb6b2016e660c160a0ee0b22763f">quadratic_roots</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *c, const double discriminant, struct <a class="el" href="structequation__sol.html">equation_sol</a> *sol)</td></tr>
+<tr class="separator:a3b47cb6b2016e660c160a0ee0b22763f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff1df21620c6691b8d7920ac7b006e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#abff1df21620c6691b8d7920ac7b006e4">solve</a> (const struct <a class="el" href="structcoefficients.html">coefficients</a> *coeff, struct <a class="el" href="structequation__sol.html">equation_sol</a> *sol)</td></tr>
+<tr class="separator:abff1df21620c6691b8d7920ac7b006e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef0ff455fb952a23fd701274f781f15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a6ef0ff455fb952a23fd701274f781f15">cmp_to_zero</a> (const double val)</td></tr>
 <tr class="separator:a6ef0ff455fb952a23fd701274f781f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7658107fd0e226942d4b9546152610"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a0b7658107fd0e226942d4b9546152610">cmp_double</a> (double val1, double val2)</td></tr>
@@ -149,8 +153,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a33645254f7af9b9b6dc1042822b4f04c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a33645254f7af9b9b6dc1042822b4f04c">errtype</a></td></tr>
-<tr class="separator:a33645254f7af9b9b6dc1042822b4f04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabfbca3aafd20e5596183e1a1705b4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#adabfbca3aafd20e5596183e1a1705b4a">ERRTYPE</a></td></tr>
+<tr class="memdesc:adabfbca3aafd20e5596183e1a1705b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores most recent error code.  <a href="arithmetics_8h.html#adabfbca3aafd20e5596183e1a1705b4a">More...</a><br /></td></tr>
+<tr class="separator:adabfbca3aafd20e5596183e1a1705b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a796b99f056d3478f827cd1d2a2c166ba"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arithmetics_8h.html#a796b99f056d3478f827cd1d2a2c166ba">ACCURACY</a> = 10e-6</td></tr>
 <tr class="separator:a796b99f056d3478f827cd1d2a2c166ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -170,7 +175,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>result of comparation of two values. </p>
+<p>Result of comparation of two values. </p>
 
 </div>
 </div>
@@ -186,17 +191,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>generalized error types. </p>
+<p>Generalized error types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a996b5f0bbad38a985dd3b62337879919"></a>NO_ERR&#160;</td><td class="fielddoc"><p>no errors. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a996b5f0bbad38a985dd3b62337879919"></a>NO_ERR&#160;</td><td class="fielddoc"><p>No errors. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a07a252ea0d0a47d4435789785dded9a0"></a>ADDR_ERR&#160;</td><td class="fielddoc"><p>NULL pointer error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a49b862882607f51dc2d808bb22d83184"></a>DOUBLE_ERR&#160;</td><td class="fielddoc"><p>ifinum or NaN double value error. </p>
+<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a49b862882607f51dc2d808bb22d83184"></a>DOUBLE_ERR&#160;</td><td class="fielddoc"><p>Ifinum or NaN double value error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971aeb3a3278a73f3d87f5fefda48eafe5bf"></a>SAME_POINT_ERR&#160;</td><td class="fielddoc"><p>two pointers points to same address. </p>
+<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971aeb3a3278a73f3d87f5fefda48eafe5bf"></a>SAME_POINT_ERR&#160;</td><td class="fielddoc"><p>Two pointers points to same address. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a721da2b17ceeb0c1383276ac19c9cffb"></a>UNKNOWN_ERR&#160;</td><td class="fielddoc"><p>unknown error type </p>
+<tr><td class="fieldname"><a id="acc42076253600be964e110149b458971a721da2b17ceeb0c1383276ac19c9cffb"></a>UNKNOWN_ERR&#160;</td><td class="fielddoc"><p>Unknown error type </p>
 </td></tr>
 </table>
 
@@ -213,15 +218,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>enum state - enumeration of possible equation roots state. </p>
+<p>enum state - Enumeration of possible equation roots state. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600caf3e6fa9925576441c12b61696459de11"></a>INF_SOL&#160;</td><td class="fielddoc"><p>if equation has infinite solutions. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600caf3e6fa9925576441c12b61696459de11"></a>INF_SOL&#160;</td><td class="fielddoc"><p>If equation has infinite solutions. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf"></a>NO_SOL&#160;</td><td class="fielddoc"><p>if equation has no solutions. </p>
+<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca744065c64f7cd30f69ed5c8e7a61babf"></a>NO_SOL&#160;</td><td class="fielddoc"><p>If equation has no solutions. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca9975cac25be5c19ebc100ebc58e67004"></a>ONE_SOL&#160;</td><td class="fielddoc"><p>if equation has one solution. </p>
+<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca9975cac25be5c19ebc100ebc58e67004"></a>ONE_SOL&#160;</td><td class="fielddoc"><p>If equation has one solution. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac"></a>TWO_SOL&#160;</td><td class="fielddoc"><p>if equation has two solutions. </p>
+<tr><td class="fieldname"><a id="abea4d72055676a8f4fc3e911a1c1600ca681db2e870834d62487cf322aacd31ac"></a>TWO_SOL&#160;</td><td class="fielddoc"><p>If equation has two solutions. </p>
 </td></tr>
 </table>
 
@@ -253,11 +258,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>compares two double value.</p>
+<p>Compares two double value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">val1</td><td>first value. </td></tr>
-    <tr><td class="paramname">val2</td><td>second value.</td></tr>
+    <tr><td class="paramname">val1</td><td>First value. </td></tr>
+    <tr><td class="paramname">val2</td><td>Second value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -284,11 +289,11 @@ Variables</h2></td></tr>
 <p>Checks if val is in the vicinity of 0 with accuracy 10e-6.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">double</td><td>value which shoild be compared with 0.</td></tr>
+    <tr><td class="paramname">val</td><td>Double value which shoild be compared with 0.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>returns 1 if number in the vicinity of 0, overwise return 1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if number in the vicinity of 0, overwise return 1. </dd></dl>
 
 </div>
 </div>
@@ -328,11 +333,11 @@ Variables</h2></td></tr>
 <p>Calculates discrminant of quadratic equation with coefficients saved in coefficients structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>pointer to coefficient structure</td></tr>
+    <tr><td class="paramname">c</td><td>Pointer to coefficient structure</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>discriminant of quadratic equation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Discriminant of quadratic equation. </dd></dl>
 
 </div>
 </div>
@@ -362,8 +367,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abf37d97262beb68c0d4bfe9be48b5f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf37d97262beb68c0d4bfe9be48b5f0c">&#9670;&nbsp;</a></span>linear()</h2>
+<a id="a68f3a3f484453f04f5493bb9a6b19ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f3a3f484453f04f5493bb9a6b19ce3">&#9670;&nbsp;</a></span>linear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,7 +388,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structsolution.html">solution</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structequation__sol.html">equation_sol</a> *&#160;</td>
           <td class="paramname"><em>sol</em>&#160;</td>
         </tr>
         <tr>
@@ -394,22 +399,22 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>solves linear equation. </p>
+<p>Solves linear equation. </p>
 <p>Solves linear equation and writes solutions into solution strucutre. If linear equation has no solutions, sets sol state to NO_SOL. If linear equation has infinity solutions, sets sol state to INF_SOL. If linear equation has one solution, sets sol state to ONE_SOL, calculate root and sets sol x1 value to root value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>coefficient at x. </td></tr>
-    <tr><td class="paramname">b</td><td>free coefficient </td></tr>
-    <tr><td class="paramname">sol</td><td>pointer to solution structure.</td></tr>
+    <tr><td class="paramname">a</td><td>Coefficient at x. </td></tr>
+    <tr><td class="paramname">b</td><td>Free coefficient </td></tr>
+    <tr><td class="paramname">sol</td><td>Pointer to solution structure.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>if any errors returns error name, overwise returns 0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If any errors returns error name, overwise returns 0 </dd></dl>
 
 </div>
 </div>
-<a id="a801b3da7f6cb59a0ae8c8ba690062917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a801b3da7f6cb59a0ae8c8ba690062917">&#9670;&nbsp;</a></span>quadratic()</h2>
+<a id="a10618c42e73dbb0e0e005c17f75d6a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10618c42e73dbb0e0e005c17f75d6a40">&#9670;&nbsp;</a></span>quadratic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +428,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structsolution.html">solution</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structequation__sol.html">equation_sol</a> *&#160;</td>
           <td class="paramname"><em>sol</em>&#160;</td>
         </tr>
         <tr>
@@ -434,20 +439,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>solve quadratic equation. </p>
-<p>Checks if quadratic equation has solutions, if it has, sets sol state to TWO_SOL and calculate roots via <a class="el" href="arithmetics_8h.html#a3bf9deb3c25d23950049f9a553f3f1df">quadratic_roots()</a> function overwise sets sol state to NO_SOL.</p>
+<p>Solve quadratic equation. </p>
+<p>Checks if quadratic equation has solutions, if it has, sets sol state to TWO_SOL and calculate roots via <a class="el" href="arithmetics_8h.html#a3b47cb6b2016e660c160a0ee0b22763f">quadratic_roots()</a> function overwise sets sol state to NO_SOL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>pointer to coefficient structure. </td></tr>
-    <tr><td class="paramname">sol</td><td>pointer to solution structure. </td></tr>
+    <tr><td class="paramname">c</td><td>Pointer to coefficient structure. </td></tr>
+    <tr><td class="paramname">sol</td><td>Pointer to solution structure. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a3bf9deb3c25d23950049f9a553f3f1df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf9deb3c25d23950049f9a553f3f1df">&#9670;&nbsp;</a></span>quadratic_roots()</h2>
+<a id="a3b47cb6b2016e660c160a0ee0b22763f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b47cb6b2016e660c160a0ee0b22763f">&#9670;&nbsp;</a></span>quadratic_roots()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +472,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structsolution.html">solution</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structequation__sol.html">equation_sol</a> *&#160;</td>
           <td class="paramname"><em>sol</em>&#160;</td>
         </tr>
         <tr>
@@ -481,17 +486,17 @@ Variables</h2></td></tr>
 <p>Calculate roots of quadratic equation (assuming discriminant &gt;= 0) and writes them into sol x1 and x2 values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>pointer to coefficient structure. </td></tr>
-    <tr><td class="paramname">discriminant</td><td>discriminant value. </td></tr>
-    <tr><td class="paramname">sol</td><td>pointer to solutions structure. </td></tr>
+    <tr><td class="paramname">c</td><td>Pointer to coefficient structure. </td></tr>
+    <tr><td class="paramname">discriminant</td><td>Discriminant value. </td></tr>
+    <tr><td class="paramname">sol</td><td>Pointer to solutions structure. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab9318f0e1363cef82959feeb1402671d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9318f0e1363cef82959feeb1402671d">&#9670;&nbsp;</a></span>solve()</h2>
+<a id="abff1df21620c6691b8d7920ac7b006e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff1df21620c6691b8d7920ac7b006e4">&#9670;&nbsp;</a></span>solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +510,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structsolution.html">solution</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structequation__sol.html">equation_sol</a> *&#160;</td>
           <td class="paramname"><em>sol</em>&#160;</td>
         </tr>
         <tr>
@@ -516,13 +521,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>solves equation with coefficients a, b, c.</p>
-<p>Determines equation type (depends on a value) and calls <a class="el" href="arithmetics_8h.html#abf37d97262beb68c0d4bfe9be48b5f0c" title="solves linear equation.">linear()</a> or <a class="el" href="arithmetics_8h.html#a801b3da7f6cb59a0ae8c8ba690062917" title="solve quadratic equation.">quadratic()</a> function.</p>
+<p>Determines equation type (depends on a value) and calls <a class="el" href="arithmetics_8h.html#a68f3a3f484453f04f5493bb9a6b19ce3" title="Solves linear equation.">linear()</a> or <a class="el" href="arithmetics_8h.html#a10618c42e73dbb0e0e005c17f75d6a40" title="Solve quadratic equation.">quadratic()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>coefficient at x^2. </td></tr>
-    <tr><td class="paramname">b</td><td>coefficient at x. </td></tr>
-    <tr><td class="paramname">c</td><td>free coefficient. </td></tr>
-    <tr><td class="paramname">sol</td><td>pointer to solution structure </td></tr>
+    <tr><td class="paramname">a</td><td>Coefficient at x^2. </td></tr>
+    <tr><td class="paramname">b</td><td>Coefficient at x. </td></tr>
+    <tr><td class="paramname">c</td><td>Free coefficient. </td></tr>
+    <tr><td class="paramname">sol</td><td>Pointer to solution structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -545,8 +550,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a33645254f7af9b9b6dc1042822b4f04c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33645254f7af9b9b6dc1042822b4f04c">&#9670;&nbsp;</a></span>errtype</h2>
+<a id="adabfbca3aafd20e5596183e1a1705b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabfbca3aafd20e5596183e1a1705b4a">&#9670;&nbsp;</a></span>ERRTYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +560,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int errtype</td>
+          <td class="memname">int ERRTYPE</td>
         </tr>
       </table>
   </td>
@@ -564,8 +569,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>stores most recent error code</p>
-<p>heavily lightweight errno analog </p>
+
+<p>Stores most recent error code. </p>
+<p>Heavily lightweight errno analog. </p>
 
 </div>
 </div>

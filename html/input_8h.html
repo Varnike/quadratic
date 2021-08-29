@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: input.h File Reference</title>
+<title>My Project: src/input.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,43 +59,70 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">input.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;errno.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;assert.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
+
+<p>Functions for reading coefficients from stdin.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="arithmetics_8h_source.html">arithmetics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for input.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="input_8h__incl.png" border="0" usemap="#ainput_8h" alt=""/></div>
+<div class="center"><img src="input_8h__incl.png" border="0" usemap="#asrc_2input_8h" alt=""/></div>
 </div>
 </div>
 <p><a href="input_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae0f8262ae155d0cba15cec05d034c9e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ae0f8262ae155d0cba15cec05d034c9e7">run_mode</a> { <b>UNITTEST_MODE</b> = 0
+, <b>DEFAULT_MODE</b> = 1
+ }</td></tr>
+<tr class="separator:ae0f8262ae155d0cba15cec05d034c9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a493a8efd86487fa2f65af9cf1d25611e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a> (double *coeff)</td></tr>
 <tr class="separator:a493a8efd86487fa2f65af9cf1d25611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa199eb5ca026d61c1bca8eef5bb6fcb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#aa199eb5ca026d61c1bca8eef5bb6fcb0">clearStdin</a> ()</td></tr>
 <tr class="separator:aa199eb5ca026d61c1bca8eef5bb6fcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a09aab0719908e5f01c77d290451579fc"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a> = 100</td></tr>
-<tr class="separator:a09aab0719908e5f01c77d290451579fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24174a96f6e50beeada7d4073bf6f7d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a24174a96f6e50beeada7d4073bf6f7d4">readCoeffs</a> (struct <a class="el" href="structcoefficients.html">coefficients</a> *coeff)</td></tr>
+<tr class="memdesc:a24174a96f6e50beeada7d4073bf6f7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads all coefficients from stdin to coeff.  <a href="input_8h.html#a24174a96f6e50beeada7d4073bf6f7d4">More...</a><br /></td></tr>
+<tr class="separator:a24174a96f6e50beeada7d4073bf6f7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>functions for reading coefficients from stdin </p><dl class="section author"><dt>Author</dt><dd>Varnike </dd></dl>
+<div class="textblock"><p>Functions for reading coefficients from stdin. </p>
+<dl class="section author"><dt>Author</dt><dd>Varnike </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>28 Aug, 16:13 UTC+5 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae0f8262ae155d0cba15cec05d034c9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f8262ae155d0cba15cec05d034c9e7">&#9670;&nbsp;</a></span>run_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="input_8h.html#ae0f8262ae155d0cba15cec05d034c9e7">run_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Progam run mode. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aa199eb5ca026d61c1bca8eef5bb6fcb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa199eb5ca026d61c1bca8eef5bb6fcb0">&#9670;&nbsp;</a></span>clearStdin()</h2>
 
@@ -110,7 +137,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>clears stdin buffer </p>
+<p>Clears stdin buffer. </p>
 
 </div>
 </div>
@@ -129,31 +156,42 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>reads coefficients from stdin.</p>
+<p>Reads coefficients from stdin.</p>
 <p>Checks input. If input value can be represented as double exactly, reads it to coeff and returns 1. Overwise prints error mesage and returns 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">coeff</td><td>pointer to coefficient.</td></tr>
+    <tr><td class="paramname">coeff</td><td>Pointer to coefficient.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if input data is valid, overwise reurns 0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if input data is valid, overwise returns 0. </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a09aab0719908e5f01c77d290451579fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09aab0719908e5f01c77d290451579fc">&#9670;&nbsp;</a></span>MAXLEN</h2>
+<a id="a24174a96f6e50beeada7d4073bf6f7d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24174a96f6e50beeada7d4073bf6f7d4">&#9670;&nbsp;</a></span>readCoeffs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int MAXLEN = 100</td>
+          <td class="memname">int readCoeffs </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcoefficients.html">coefficients</a> *&#160;</td>
+          <td class="paramname"><em>coeff</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>MAXLEN: maximum input length. </p>
+
+<p>Reads all coefficients from stdin to coeff. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>Pointer to coefficients structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if input data is valid and all coefficients written, overwise reurns 0. </dd></dl>
 
 </div>
 </div>
