@@ -2,9 +2,13 @@
 Solves quadratic or linear equation.
 ##### Table of contents:
 [Compilation](#compilation)
+
 [Run](#run)
+
 [Parameters](#parameters)
+
 [Usage](#usage)
+
 [Example of use](#example)
 ## Compilation
 Download files via [git]("https://git-scm.com/"):
