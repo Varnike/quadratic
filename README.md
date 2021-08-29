@@ -1,6 +1,11 @@
 # Quadratic equation solver
 Solves quadratic or linear equation.
-
+##### Table of contents:
+[Compilation](#compilation)
+[Run](#run)
+[Parameters](#parameters)
+[Usage](#usage)
+[Example of use](#example)
 ## Compilation
 Download files via [git]("https://git-scm.com/"):
 ```sh
@@ -12,16 +17,16 @@ cd quadratic/
 make
 ```
 ## Run
-To start programm, type in console:
+To start programm, go to ~/quadraric directory and type in console:
 ```sh
 ./quadratic [parametr]
 ```
-#### Parametres:
+#### Parameters:
 - [-h] - help
 - [-t] - run unittest
  
 ## Usage
-If you didn't choose [-t] option, program will ask you to enter three coefficients of quadratic equasion. Enter these numbers. Program will print number of solutions and solutions.
+If you didn't choose any option, program will ask you to enter three coefficients of quadratic equation. Enter these numbers. Program will print number of solutions and roots of equasion.
 
 ## Example of use
 After compiling and start program with no parametres you will see:
