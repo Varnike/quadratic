@@ -1,4 +1,4 @@
-#include "../headers/unittest.h"
+#include "unittest.h"
 
 int test(int n, struct coefficients coeffs, struct equation_sol answ_sol)
 { 

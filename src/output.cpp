@@ -1,4 +1,4 @@
-#include "../headers/output.h"
+#include "output.h"
 
 int print_roots(struct equation_sol *s)
 {

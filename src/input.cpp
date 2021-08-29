@@ -1,10 +1,10 @@
-#include "../headers/input.h"
+#include "input.h"
 
 int read_coefficient(double *c)
 {
         assert(c);
 
-        char inputstr[MAXLEN] = {0};
+        char inputstr[MAX_BUFF_LEN] = {0};
         char *ptr = nullptr;
 
         scanf("%s", inputstr);
@@ -13,7 +13,7 @@ int read_coefficient(double *c)
 
         *c = strtod(inputstr, &ptr);
         if (errno != 0 || *ptr != '\0') {
-                fprintf(stderr,"\" %s\": value could not be represented as a double exactly\n", inputstr);
+                fprintf(stderr,"\"%s\": value could not be represented as a double exactly\n", inputstr);
                 return 0;
         }
 
@@ -27,14 +27,15 @@ void clearStdin()
 		;
 }
 
-int readAllCoeffs(struct coefficients *coeff)
+int readCoeffs(struct coefficients *coeff)
 {
-	for(int i = 0; i != coeff->coeff_n; i++) {
+	for (size_t i = 0; i != coeff->coeff_n; i++) {
 		if (!read_coefficient(&coeff->val[i])) {
 			clearStdin();
 			return 0;
 		}
 	}
 	clearStdin();
+
 	return 1;
 }

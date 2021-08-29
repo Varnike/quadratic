@@ -1,4 +1,4 @@
-#include "../headers/arithmetics.h"
+#include "arithmetics.h"
 
 int ERRTYPE = 0;
 
