@@ -38,7 +38,7 @@ Suppose you entered three coefficients: a = 12, b = 89, c = -321.1:
 Enter coefficients a, b, c: 
 12 89 -321.1
 ```
-After you pressed enter, programm will print the solution:
+After you pressed enter, program will print the solution:
 ```sh
 Solutions: -10.073085, 2.656419
 ```
