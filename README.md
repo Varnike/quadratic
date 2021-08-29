@@ -2,7 +2,11 @@
 Solves quadratic or linear equation.
 
 ## Compilation
-After downloading files run:
+Download files via [git]("https://git-scm.com/"):
+```sh
+git clone https://github.com/Varnike/quadratic.git
+```
+After downloading files run(in same directory):
 ```sh
 cd quadratic/
 make
