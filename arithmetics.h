@@ -1,11 +1,11 @@
 /**
  * @file
  *
- * @brief Set of functions which can be used to solve linear or quadratic equasion.
+ * @brief Set of functions which can be used to solve linear or quadratic equation.
  *
  * @author Varnike
  *
- * @date Mon 27 Fri, 17:09 UTC+5.
+ * @date 27 Aug, 17:09 UTC+5.
  */
 
 
@@ -28,7 +28,7 @@ extern int errtype;
 /**
  * enum state - enumeration of possible equation roots state.
  */
-enum solutions_no {
+enum solutions_type {
 	/**
          * if equation has infinite solutions.
          */
@@ -50,9 +50,9 @@ enum solutions_no {
  * result of comparation of two values.
  */
 enum compare_result {
-	LESS = -1,
+	LESS  = -1,
 	EQUAL = 0,
-	MORE = 1
+	MORE  = 1
 };	
 /**
  * @brief generalized error types.
@@ -66,7 +66,7 @@ enum errors {
 	/**
 	 * NULL pointer error.
 	 */
-	ADDR_ERR   = 1,
+	ADDR_ERR = 1,
 	/**
 	 * ifinum or NaN double value error.
 	 */
@@ -80,22 +80,23 @@ enum errors {
 	 */
 	UNKNOWN_ERR = 4
 };
+
 /**
  * struct solution - stores solution of equation.
  */
 struct solution {
         /**
-         * first root of equasion and only one if its linear equasion with one solution.
+         * first root of equation and only one if its linear equation with one solution.
          */
         double x1;
         /**
-         * second root (if it is quadratic equasion).
+         * second root (if it is quadratic equation).
          */
         double x2;
         /**
-         * state of equasion.
+         * state of equation.
          */
-        enum solutions_no type;
+        enum solutions_type type;
 };
 
 /**
@@ -113,23 +114,23 @@ struct coefficients {
 const double ACCURACY = 10e-6;
 
 /**
- * @brief discriminant of quadratic equasion.
+ * @brief discriminant of quadratic equation.
  *
- * Calculates discrminant of quadratic equasion with coefficients saved in coefficients structure.
+ * Calculates discrminant of quadratic equation with coefficients saved in coefficients structure.
  * 
  * @param c pointer to coefficient structure
  *
- * @return discriminant of quadratic equasion.
+ * @return discriminant of quadratic equation.
  */
 double discr(const double a, const double b, const double c);
 
 /**
  * @brief solves linear equation.
  *
- * Solves linear equasion and writes solutions into solution strucutre.
- * If linear equasion has no solutions, sets sol state to NO_SOL.
- * If linear equasion has infinity solutions, sets sol state to INF_SOL.
- * If linear equasion has one solution, sets sol state to ONE_SOL,
+ * Solves linear equation and writes solutions into solution strucutre.
+ * If linear equation has no solutions, sets sol state to NO_SOL.
+ * If linear equation has infinity solutions, sets sol state to INF_SOL.
+ * If linear equation has one solution, sets sol state to ONE_SOL,
  * calculate root and sets sol x1 value to root value.
  *
  * @param a coefficient at x.
@@ -141,9 +142,9 @@ double discr(const double a, const double b, const double c);
 int linear(const double b, const double c, struct solution *sol);
 
 /**
- * @brief solve quadratic equasion.
+ * @brief solve quadratic equation.
  *
- * Checks if quadratic equasion has solutions, if it has, sets sol state to
+ * Checks if quadratic equation has solutions, if it has, sets sol state to
  * TWO_SOL and calculate roots via quadratic_roots() function
  * overwise sets sol state to NO_SOL.
  *
@@ -156,7 +157,7 @@ int quadratic(const struct coefficients *c, struct solution *sol);
 /**
  * calculates roots of quadratic equation.
  *
- * Calculate roots of quadratic equasion (assuming discriminant >= 0)
+ * Calculate roots of quadratic equation (assuming discriminant >= 0)
  * and writes them into sol x1 and x2 values.
  *
  * @param c pointer to coefficient structure.
@@ -167,9 +168,9 @@ int quadratic(const struct coefficients *c, struct solution *sol);
 int quadratic_roots(const struct coefficients *c, const double discriminant, struct solution *sol);
 
 /**
- * solves equasion with coefficients a, b, c.
+ * solves equation with coefficients a, b, c.
  *
- * Determines equasion type (depends on a value) and calls
+ * Determines equation type (depends on a value) and calls
  * linear() or quadratic() function.
  *
  * @param a coefficient at x^2.

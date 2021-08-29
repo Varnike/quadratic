@@ -1,3 +1,10 @@
+/**
+ * @file
+ * functions for reading coefficients from stdin 
+ * @author Varnike
+ * @date 28 Aug, 16:13 UTC+5
+ */
+
 #ifndef INPUT_H
 #define INPUT_H
 
@@ -24,6 +31,7 @@ const int MAXLEN = 100;
  * @return 1 if input data is valid, overwise reurns 0 
  */
 int read_coefficient(double *coeff);
+
 /**
  * clears stdin buffer
  */

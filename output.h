@@ -1,3 +1,10 @@
+/**
+ * @file
+ * Set of functions for printing solution of quadratic equasion
+ * @author Varnike
+ * @date 28 Aug 16:17 UTC+5
+ */
+
 #ifndef OUTPUT_H
 #define OUTPUT_H
 

@@ -3,7 +3,7 @@
 int print_roots(struct solution *s)
 {
    	if (s == NULL)
-	   return ADDR_ERR;	
+		return ADDR_ERR;	
         switch (s->type) {
         case INF_SOL:
                 printf("Infinite solutions\n");

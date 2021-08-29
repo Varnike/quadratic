@@ -5,7 +5,7 @@ int read_coefficient(double *c)
         assert(c);
 
         char inputstr[MAXLEN] = {0};
-        char *ptr = NULL;
+        char *ptr = nullptr;
 
         scanf("%s", inputstr);
 
@@ -13,7 +13,7 @@ int read_coefficient(double *c)
 
         *c = strtod(inputstr, &ptr);
         if (errno != 0 || *ptr != '\0') {
-                fprintf(stderr,"value could not be represented as a double exactly\n");
+                fprintf(stderr,"\" %s\": value could not be represented as a double exactly\n", inputstr);
                 return 0;
         }
 
@@ -22,7 +22,7 @@ int read_coefficient(double *c)
 
 void clearStdin() 
 {
-	int c;
+	int c = 0;
 	while((c = getchar()) != EOF && c != '\n')
 		;
 }
