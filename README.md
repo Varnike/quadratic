@@ -26,10 +26,10 @@ To start programm, go to ~/quadraric directory and type in console:
 - [-t] - run unittest
  
 ## Usage
-If you didn't choose any option, program will ask you to enter three coefficients of quadratic equation. Enter these numbers. Program will print number of solutions and roots of equasion.
+If you didn't choose any option, program will ask you to enter three coefficients of quadratic equation. Enter these numbers. Program will print number of solutions and roots of equation.
 
 ## Example of use
-After compiling and start program with no parametres you will see:
+After compiling and start program with no parametes you will see:
 ```sh
 Enter coefficients a, b, c: 
 ```
