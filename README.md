@@ -19,7 +19,7 @@ make
 ## Run
 To start programm, go to ~/quadraric directory and type in console:
 ```sh
-./quadratic [parametr]
+./quadratic [parameter]
 ```
 #### Parameters:
 - [-h] - help
