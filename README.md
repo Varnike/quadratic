@@ -1,13 +1,10 @@
 # Quadratic equation solver
 Solves quadratic or linear equation.
 ##### Table of contents:
-[Compilation](#compilation)
-
-[Run](#run)
-
-[Parameters](#parameters)
-
-[Usage](#usage)
+- [Compilation](#compilation)
+- [Run](#run)
+- [Parameters](#parameters)
+- [Usage](#usage)
 
 [Example of use](#example)
 ## Compilation
