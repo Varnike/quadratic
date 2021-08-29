@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errtype_58',['errtype',['../arithmetics_8h.html#a33645254f7af9b9b6dc1042822b4f04c',1,'arithmetics.cpp']]]
+  ['errtype_68',['ERRTYPE',['../arithmetics_8h.html#adabfbca3aafd20e5596183e1a1705b4a',1,'arithmetics.cpp']]]
 ];
