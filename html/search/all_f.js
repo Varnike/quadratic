@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x1_37',['x1',['../structsolution.html#a4db2109487bdca8eed97d3c6da125e68',1,'solution']]],
-  ['x2_38',['x2',['../structsolution.html#a227566cab64a702caa7e8928c7da47d3',1,'solution']]]
+  ['x1_42',['x1',['../structequation__sol.html#a54c495848f80d0e2b2ccf012deb94630',1,'equation_sol']]],
+  ['x2_43',['x2',['../structequation__sol.html#a70805cd2c921091b5f1d224570eddc2f',1,'equation_sol']]]
 ];

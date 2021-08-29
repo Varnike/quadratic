@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maxlen_15',['MAXLEN',['../solve_8h.html#a09aab0719908e5f01c77d290451579fc',1,'input.h']]]
+  ['max_5fbuff_5flen_18',['MAX_BUFF_LEN',['../config_8h.html#a5cddb2cf1ae5157c1a93141f3ec2ab87',1,'config.h']]]
 ];

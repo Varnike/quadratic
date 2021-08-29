@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['solution_40',['solution',['../structsolution.html',1,'']]]
+  ['equation_5fsol_45',['equation_sol',['../structequation__sol.html',1,'']]]
 ];

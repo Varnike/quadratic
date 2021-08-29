@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['solve_2eh_42',['solve.h',['../solve_8h.html',1,'']]]
+  ['config_2eh_47',['config.h',['../config_8h.html',1,'']]]
 ];
