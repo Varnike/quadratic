@@ -65,22 +65,25 @@ $(function() {
 <div class="title">input.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="solve_8h.html#a09aab0719908e5f01c77d290451579fc">   13</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="solve_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a> = 100;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="solve_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a>(<span class="keywordtype">double</span> *coeff);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> clearStdin();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="asolve_8h_html_a09aab0719908e5f01c77d290451579fc"><div class="ttname"><a href="solve_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a></div><div class="ttdeci">const int MAXLEN</div><div class="ttdef"><b>Definition:</b> input.h:13</div></div>
-<div class="ttc" id="asolve_8h_html_a493a8efd86487fa2f65af9cf1d25611e"><div class="ttname"><a href="solve_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a></div><div class="ttdeci">int read_coefficient(double *coeff)</div><div class="ttdef"><b>Definition:</b> input.cpp:3</div></div>
+<a href="input_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define INPUT_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="input_8h.html#a09aab0719908e5f01c77d290451579fc">   20</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="input_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a> = 100;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a>(<span class="keywordtype">double</span> *coeff);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#aa199eb5ca026d61c1bca8eef5bb6fcb0">clearStdin</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ainput_8h_html_a09aab0719908e5f01c77d290451579fc"><div class="ttname"><a href="input_8h.html#a09aab0719908e5f01c77d290451579fc">MAXLEN</a></div><div class="ttdeci">const int MAXLEN</div><div class="ttdef"><b>Definition:</b> input.h:20</div></div>
+<div class="ttc" id="ainput_8h_html_a493a8efd86487fa2f65af9cf1d25611e"><div class="ttname"><a href="input_8h.html#a493a8efd86487fa2f65af9cf1d25611e">read_coefficient</a></div><div class="ttdeci">int read_coefficient(double *coeff)</div><div class="ttdef"><b>Definition:</b> input.cpp:3</div></div>
+<div class="ttc" id="ainput_8h_html_aa199eb5ca026d61c1bca8eef5bb6fcb0"><div class="ttname"><a href="input_8h.html#aa199eb5ca026d61c1bca8eef5bb6fcb0">clearStdin</a></div><div class="ttdeci">void clearStdin()</div><div class="ttdef"><b>Definition:</b> input.cpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
